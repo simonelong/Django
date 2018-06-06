@@ -1,0 +1,98 @@
+{
+  "data":[
+    {
+        "img":"haohuo.png",
+        "name": "好货商城",
+        "tip":"通过率高",
+        "quota":"3500",
+        "type":"审核时长",
+        "ratio":"5分钟审核",
+        "limit":"6个月",
+        "address":"https://jk.baidaibao.com/baidaibao?utm_source=bdh"
+    },
+    {
+        "img":"miaohuishou.png",
+        "name": "秒回收",
+        "tip":"审批快",
+        "quota":"1000",
+        "type":"审核时长",
+        "ratio":"5分钟审核",
+        "limit":"14天",
+        "address":"http://mhswapm.baidaibao.com/registerH5/?UtmSource=bdh"
+    },
+    {
+        "img":"xianjin.png",
+        "name": "现金秒贷",
+        "tip":"",
+        "quota":"500-5000",
+        "type":"审核时长",
+        "ratio":"10分钟审核",
+        "limit":"7天",
+        "address":"http://url.52xkz.com/qzzzb"
+    },
+    {
+        "img":"baobei.png",
+        "name": "宝贝白卡",
+        "tip":"",
+        "quota":"1000-1万",
+        "type":"审核时长",
+        "ratio":"5分钟审核",
+        "limit":"30天",
+        "address":"http://url.52xkz.com/bbbkzm"
+    },
+    {
+        "img":"shandian.png",
+        "name": "闪电白卡",
+        "tip":"",
+        "quota":"500",
+        "type":"审核时长",
+        "ratio":"6分钟审核",
+        "limit":"7天",
+        "address":"http://url.52xkz.com/sdbkzm"
+    },
+    {
+        "img":"jisu.png",
+        "name": "急速白条",
+        "tip":"",
+        "quota":"500-5000",
+        "type":"审核时长",
+        "ratio":"5分钟审核",
+        "limit":"7天",
+        "address":"http://url.52xkz.com/jsbtzm"
+    },
+    {
+        "img":"shandian.png",
+        "name": "借点钱",
+        "tip":"",
+        "quota":"1000-5万",
+        "type":"审核时长",
+        "ratio":"10分钟审核",
+        "limit":"7天-24个月",
+        "address":"https://m.jiedianqian.com/land/89?channel=bbdcpa1"
+    },
+    {
+        "img":"kaniu.png",
+        "name": "卡牛",
+        "tip":"",
+        "quota":"1000-20万",
+        "type":"审核时长",
+        "ratio":"10分钟审核",
+        "limit":"3-36个月",
+        "address":"https://www.cardniu.com/loan/popularize/index.html?channel=bdh_1"
+    }
+  ],
+  "banner":[
+    {
+      "img":"banner2.png",
+      "address":"https://jk.baidaibao.com/baidaibao?utm_source=bdh"
+    },
+    {
+      "img":"banner3.png",
+      "address":"https://jk.baidaibao.com/baidaibao?utm_source=bdh"
+    },
+    {
+      "img":"banner1.png",
+      "address":"https://www.cardniu.com/loan/popularize/index.html?channel=bdh_1"
+    }
+  ]
+}
