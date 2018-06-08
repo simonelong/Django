@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/static/booktest/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+            pro=$('#pro')
+            city=$('#city')
+            dis=$('#dis')
+
+            $.get('/sheng/0/',function(pdic){
+                $.each(pdic.data,function(index,item){
+                    pro.append('<option value="'+item[0]+'">'+item[1]+'</option>')
+                })
+            })
+
+        $('#pro').change(function () {
+            var pid =$(this).val()
+            $('#city').empty().append('<option value="0">请选择</option>')
+            $('#dis').empty().append('<option value="0">请选择</option>')
+            if (pid!=0){
+                $.get('/shi/',{'pid':pid},function (cdic) {
+                $.each(cdic.data,function(index,item){
+                        city.append('<option value="'+item.id+'">'+item.title+'</option>')
+                     })
+                })
+            }
+        })
+
+        $('#city').change(function(){
+            var pid =$(this).val()
+            if (pid !='0'){
+                $.get('/qu/',{'pid':pid},function(qdic){
+                $.each(qdic.data,function(index,item){
+                    dis.append('<option value="'+item.id+'">'+item.title+'</option>')
+                    })
+                })
+            }
+        })
+
+
+        })
+    </script>
+</head>
+<body>
+<select id="pro">
+    <option value="">请选择</option>
+</select>
+
+<select id="city">
+    <option value="">请选择</option>
+</select>
+{{pid}}
+<select id="dis">
+    <option value="">请选择</option>
+</select>
+</body>
+</html>
