@@ -5,7 +5,6 @@ from django.db.models import Q
 import hashlib
 from models import *
 
-# Create your views here.
 
 def register(request):
     return  render(request,'df_user/register.html')
@@ -28,7 +27,7 @@ def register_handle(request):
     user.uname=name
     user.upwd=upwd
     user.uemail=email
-    user.save()
+     #user.save()
     #zhu ce oK zhuan dao denglu
 
     return redirect('/user/login/')
@@ -51,12 +50,32 @@ def login_handle(request):
     list =UserInfo.objects.filter(q1 & q2)
     if list:
         username =list[0].uname
-        context = {'name': username}
-        #return render(request, '/commodity/index/', context)
-        return render(request,'df_commodity/index.html',context)
+        request.session['name']=username
+        return redirect('/df_goods/index/')
     else:
         return redirect('/user/login/')
 
 
 def user_center_info(request):
-    return render(request, 'df_user/user_center_info.html')
+    return render(request,'df_user/user_center_info.html')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

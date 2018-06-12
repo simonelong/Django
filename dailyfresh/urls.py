@@ -16,8 +16,10 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 
+
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^user/',include('df_user.urls')),
-    url(r'^commodity/',include('df_commodity.urls')),
+    url(r'^df_goods/',include('df_goods.urls')),
+    url(r'^tinymce/',include('tinymce.urls')),
 ]
